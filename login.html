@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="login.php" method="post" autocomplete="off">
+      <fieldset>
+        <legend>Login Information</legend>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="Enter username" required autofocus>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" required>
+        </div>
+      </fieldset>
+      <div class="form-actions">
+        <button type="submit">Login</button>
+        <button formaction="signup.html" formnovalidate formmethod="get" type="submit">Sign Up</button>
+        <input type="reset" value="Reset">
+      </div>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup-style.css">
+</head>
+<body>
+  <h2 align="center">Create Account</h2>
+  <form action="signup.php" method="get" target="_blank" enctype="multipart/form-data" autocomplete="off">
+    <fieldset>
+      <legend>Basic Information</legend>
+      <table>
+        <tr>
+          <td><label for="username">Username</label></td>
+          <td><input type="text" id="username" name="username" placeholder="Enter username" required maxlength="10" minlength="2" autofocus></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td><input type="password" id="password" name="password" placeholder="Enter password" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+        </tr>
+      </table>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Details</legend>
+      <table>
+        <tr>
+          <td><label for="country_code">Country code (3 letters)</label></td>
+          <td><input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"></td>
+        </tr>
+        <tr>
+          <td><label for="url">Website</label></td>
+          <td><input type="url" id="url" name="url"></td>
+        </tr>
+        <tr>
+          <td><label for="number">Number (10–50)</label></td>
+          <td><input type="number" id="number" name="number" min="10" max="50" step="2"></td>
+        </tr>
+        <tr>
+          <td><label for="range">Range</label></td>
+          <td><input type="range" id="range" name="range" min="0" max="100"></td>
+        </tr>
+        <tr>
+          <td><label for="time">Time</label></td>
+          <td><input type="time" id="time" name="time"></td>
+        </tr>
+        <tr>
+          <td><label for="date">Date of Birth</label></td>
+          <td><input type="date" id="date" name="dob"></td>
+        </tr>
+        <tr>
+          <td><label>Gender</label></td>
+          <td>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label>Hobbies</label></td>
+          <td>
+            <input type="checkbox" id="reading" name="hobbies" value="Reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" name="hobbies" value="Sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="hobbies" value="Music">
+            <label for="music">Music</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="photo">Upload Photo</label></td>
+          <td><input type="file" id="photo" name="photo"></td>
+        </tr>
+      </table>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Faculty</legend>
+      <table>
+        <tr>
+          <td><label for="faculty">Select Faculty</label></td>
+          <td>
+            <select id="faculty" name="faculty">
+              <option value="cs">Faculty of Computers and Information</option>
+              <option value="engineering">Faculty of Engineering</option>
+              <option value="medicine">Faculty of Medicine</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="faculty-list">Or type to search faculty</label></td>
+          <td>
+            <input list="list1" id="faculty-list" name="faculty-list">
+            <datalist id="list1">
+              <option value="Faculty of Computers and Information">
+              <option value="Faculty of Engineering">
+              <option value="Faculty of Medicine">
+            </datalist>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+    <br>
+    <table align="center">
+      <tr>
+        <td><label for="search">Search</label></td>
+        <td><input type="search" id="search" name="search"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <button type="submit">Sign Up</button>
+          <button formaction="index.html" formnovalidate formmethod="post" type="submit">Homepage</button>
+          <input type="reset" value="Reset">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html> 

@@ -1,0 +1,146 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 40px 20px;
+    color: #333;
+  }
+  
+  /* Container Styling */
+  form {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2b2b2b;
+  }
+  
+  /* Fieldset + Legends */
+  fieldset {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  
+  legend {
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #444;
+  }
+  
+  /* Tables inside form */
+  table {
+    width: 100%;
+    border-spacing: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="number"],
+  input[type="url"],
+  input[type="date"],
+  input[type="time"],
+  input[type="search"],
+  input[type="range"],
+  input[list],
+  select,
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    transition: border 0.3s;
+    font-size: 14px;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #4285f4;
+    outline: none;
+  }
+  
+  /* Radio & Checkbox */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 6px;
+  }
+  
+  /* Buttons */
+  button,
+  input[type="reset"] {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  button[formaction] {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button:hover,
+  input[type="reset"]:hover {
+    opacity: 0.85;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    form {
+      padding: 20px;
+    }
+  
+    table {
+      display: block;
+    }
+  
+    table tr {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+    }
+  
+    table td {
+      width: 100%;
+    }
+  }
+  
