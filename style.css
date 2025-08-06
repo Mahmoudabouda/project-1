@@ -285,9 +285,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px;
-}
 
+}
+.linksparent,.footer__logo{
+width: 50%;
+}
 .footer__logo {
   font-size: 24px;
   font-weight: bold;
@@ -299,12 +301,20 @@ a {
 }
 
 .footer__copy {
-  text-align: center;
+ 
   font-size: 12px;
   margin-top: 20px;
   color: #aaa;
+  width: 50%;
 }
-
+.copy2{
+  text-align: right;
+  
+}
+.linksparent{
+display: flex;
+justify-content: space-between;
+}
 @media (max-width: 768px) {
   .header__menu {
     flex-direction: column;
